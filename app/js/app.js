@@ -5,6 +5,7 @@
 var myswasthApp = angular.module('myswasthApp', [
   'ngRoute',
   'myswasthControllers',
+  'ui.bootstrap'
 ]);
 
 myswasthApp.config(['$routeProvider',
@@ -18,6 +19,10 @@ myswasthApp.config(['$routeProvider',
         templateUrl: 'partials/visit.html',
         controller: 'VisitCtrl'
       }).
+      when('/visit/record', {
+          templateUrl: 'partials/visit-record.html',
+          controller: 'VisitRecordCtrl'
+        }).
       when('/test', {
         templateUrl: 'partials/test.html',
         controller: 'TestCtrl'
