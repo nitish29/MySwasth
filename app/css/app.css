@@ -12,6 +12,8 @@
 #footer{
 	background-color:#107eae;
 	text-align: center;
+	position: fixed;
+    bottom: 0;
 }
 
 #search-btn{
