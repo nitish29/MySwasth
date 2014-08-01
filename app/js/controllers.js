@@ -19,11 +19,11 @@ myswasthControllers.controller('VisitCtrl', ['$scope', '$http',
     });
 }]);
 
-myswasthControllers.controller('VisitRecordCtrl', ['$scope',
- function ($scope) {
+myswasthControllers.controller('VisitRecordCtrl', ['$scope','$http',
+ function ($scope,$http) {
  	$scope.VisitRecordForm = {};
 	$scope.VisitRecordForm.vdate = "";
-    $scope.VisitRecordForm.name  = "Please enter the full name";
+    $scope.VisitRecordForm.name  = "";
     $scope.VisitRecordForm.prescription  = "Prescription";
     $scope.VisitRecordForm.chiefComplaints = [
               { id : "cc1", name: "cc1" }
@@ -34,6 +34,27 @@ myswasthControllers.controller('VisitRecordCtrl', ['$scope',
              ];
     $scope.VisitRecordForm.selected = undefined;
     $scope.VisitRecordForm.states = ['cc1', 'cc2', 'cc3', 'cc4', 'cc5', 'cc6', 'cc7', 'cc8', 'cc9'];
+
+    $scope.VisitRecordForm.submitTheForm = function(item, event) {
+    	
+    		console.log("--> Submitting form");
+        var dataObject = {
+           date : $scope.VisitRecordForm.vdate,
+           name  : $scope.VisitRecordForm.name,
+           chiefcomplaints  : $scope.VisitRecordForm.chiefComplaints
+        };
+
+        alert(dataObject);
+        
+        var responsePromise = $http.post("/MySwasth/app/data/json-test-data.json", dataObject, {});
+        responsePromise.success(function(dataFromServer, status, headers, config) {
+           console.log(dataFromServer.title);
+        });
+         responsePromise.error(function(data, status, headers, config) {
+           alert("Submitting form failed!");
+        });
+      }
+
 }]);
 
 myswasthControllers.controller('TestCtrl', ['$scope', '$http',
