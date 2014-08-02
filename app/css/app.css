@@ -18,6 +18,10 @@
 
 #search-btn{
 	color:white;
-	font-size:65px;
+	font-size:35px;
 	padding:10px;
+}
+
+#help-test-form{
+	font-size:20px;
 }

@@ -27,6 +27,10 @@ myswasthApp.config(['$routeProvider',
         templateUrl: 'partials/test.html',
         controller: 'TestCtrl'
       }).
+      when('/test/record', {
+          templateUrl: 'partials/test-record.html',
+          controller: 'TestRecordCtrl'
+        }).
       when('/history', {
         templateUrl: 'partials/history.html',
         controller: 'HistoryCtrl'
