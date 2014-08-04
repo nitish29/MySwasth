@@ -14,9 +14,18 @@ myswasthControllers.controller('HomePageCtrl', ['$scope', '$http',
 	
 myswasthControllers.controller('VisitCtrl', ['$scope', '$http',
   function ($scope, $http) {
-    $http.get('data/homeicons.json').success(function(data) {
-      $scope.homeicons = data;
+    $http.get('data/visits.json').success(function(data) {
+      $scope.visits = data;
     });
+    $scope.orderProp = 'date';
+}]);
+
+myswasthControllers.controller('VisitDetailCtrl', ['$scope', '$routeParams', '$http',
+   function ($scope, $routeParams, $http ) {
+	$http.get('data/visits.json').success(function(data) {
+	      $scope.visits = data;
+	      $scope.visit = $scope.visits[$routeParams.visitId];
+	});
 }]);
 
 myswasthControllers.controller('VisitRecordCtrl', ['$scope','$http',
