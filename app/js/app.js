@@ -19,7 +19,7 @@ myswasthApp.config(['$routeProvider',
         templateUrl: 'partials/visit.html',
         controller: 'VisitCtrl'
       }).
-      when('/visit/:visitId', {
+      when('/visit/id/:visitId', {
           templateUrl: 'partials/visit-detail.html',
           controller: 'VisitDetailCtrl'
         }).
