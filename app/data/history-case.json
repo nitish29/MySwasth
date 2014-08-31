@@ -7,138 +7,108 @@
         },
         "chart": [
             {
-                "title": "Total Cholesterol",
-                "series": [
-                    {
-                        "label": "Total Cholesterol",
-                        "values": {
-                            "value": [
-                                {
-                                    "date": "30/3/2011",
-                                    "reading": "240"
-                                },
-                                {
-                                    "date": "30/5/2011",
-                                    "reading": "240"
-                                },
-                                {
-                                    "date": "30/6/2012",
-                                    "reading": "240"
-                                },
-                                {
-                                    "date": "30/8/2012",
-                                    "reading": "240"
-                                },
-                                {
-                                    "date": "3/4/2013",
-                                    "reading": "240"
-                                },
-                                {
-                                    "date": "23/7/2013",
-                                    "reading": "240"
-                                }
+                "type": "ColumnChart",
+                "data": {
+                    "cols": [
+                        {"id": "date", "label": "Date", "type": "string"},
+                        {"id": "reading", "label": "Reading", "type": "number"},
+                        {"id": "normal", "label": "Normal", "type": "number"}
+                    ], 
+                    "rows": [
+                        {
+                            "c": [
+                                {"v": "Feb 01 2009"},
+                                {"v": 19},
+                                {"v": 19}
+                            ]
+                        },
+                        {
+                            "c": [
+                                {"v": "Feb 03 2009"},
+                                {"v": 13},
+                                {"v": 19}
+                            ]
+                        },
+                        {
+                            "c": [
+                                {"v": "Feb 04 2009"},
+                                {"v": 24},
+                                {"v": 19}
                             ]
                         }
+                    ]
+                },
+                "options": {
+                    "title":"Total Cholesterol",
+                    "isStacked": "false",
+                    "fill": 20,
+                    "displayExactValues": true,
+                    "vAxis": {
+                        "title": "Sales unit", "gridlines": {"count": 6}
                     },
-                    {
-                        "label": "Normal",
-                        "values": {
-                            "value": [
-                                {
-                                    "date": "30/3/2011",
-                                    "reading": "200"
-                                },
-                                {
-                                    "date": "30/5/2011",
-                                    "reading": "200"
-                                },
-                                {
-                                    "date": "30/6/2012",
-                                    "reading": "200"
-                                },
-                                {
-                                    "date": "30/8/2012",
-                                    "reading": "200"
-                                },
-                                {
-                                    "date": "3/4/2013",
-                                    "reading": "200"
-                                },
-                                {
-                                    "date": "23/7/2013",
-                                    "reading": "200"
-                                }
-                            ]
+                    "hAxis": {
+                        "title": "Date"
+                    },
+                    "seriesType": "bars",
+                    "series": {
+                        "1": {
+                            "type": "line"
                         }
                     }
-                ]
+                },
+                "formatters":""
             },
             {
-                "title": "Total Cholesterol",
-                "series": [
-                    {
-                        "label": "Total Cholesterol",
-                        "values": {
-                            "value": [
-                                {
-                                    "date": "30/3/2011",
-                                    "reading": "240"
-                                },
-                                {
-                                    "date": "30/5/2011",
-                                    "reading": "240"
-                                },
-                                {
-                                    "date": "30/6/2012",
-                                    "reading": "240"
-                                },
-                                {
-                                    "date": "30/8/2012",
-                                    "reading": "240"
-                                },
-                                {
-                                    "date": "3/4/2013",
-                                    "reading": "240"
-                                },
-                                {
-                                    "date": "23/7/2013",
-                                    "reading": "240"
-                                }
+                "type": "ColumnChart",
+                "data": {
+                    "cols": [
+                        {"id": "date", "label": "Date", "type": "string"},
+                        {"id": "reading", "label": "Reading", "type": "number"},
+                        {"id": "normal", "label": "Normal", "type": "number"}
+                    ], 
+                    "rows": [
+                        {
+                            "c": [
+                                {"v": "Feb 01 2009"},
+                                {"v": 19},
+                                {"v": 19}
+                            ]
+                        },
+                        {
+                            "c": [
+                                {"v": "Feb 03 2009"},
+                                {"v": 13},
+                                {"v": 19}
+                            ]
+                        },
+                        {
+                            "c": [
+                                {"v": "Feb 04 2009"},
+                                {"v": 24},
+                                {"v": 19}
                             ]
                         }
+                    ]
+                },
+                "options": {
+                    "title":"Total Cholesterol",
+                    "isStacked": "false",
+                    "fill": 20,
+                    "displayExactValues": true,
+                    "vAxis": {
+                        "title": "Sales unit", "gridlines": {"count": 6}
                     },
-                    {
-                        "label": "Normal",
-                        "values": {
-                            "value": [
-                                {
-                                    "date": "30/3/2011",
-                                    "reading": "200"
-                                },
-                                {
-                                    "date": "30/5/2011",
-                                    "reading": "200"
-                                },
-                                {
-                                    "date": "30/6/2012",
-                                    "reading": "200"
-                                },
-                                {
-                                    "date": "30/8/2012",
-                                    "reading": "200"
-                                },
-                                {
-                                    "date": "3/4/2013",
-                                    "reading": "200"
-                                },
-                                {
-                                    "date": "23/7/2013",
-                                    "reading": "200"
-                                }
-                            ]
+                    "hAxis": {
+                        "title": "Date"
+                    },
+                    "seriesType": "bars",
+                    "series": {
+                        "1": {
+                            "type": "line"
                         }
                     }
-                ]
+                },
+                "formatters":""
             }
         ],
         "recommendations": {

@@ -5,7 +5,8 @@
 var myswasthApp = angular.module('myswasthApp', [
   'ngRoute',
   'myswasthControllers',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'googlechart'
 ]);
 
 myswasthApp.config(['$routeProvider',
