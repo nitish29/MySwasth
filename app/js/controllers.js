@@ -90,8 +90,12 @@ myswasthControllers.controller('TestRecordCtrl', ['$scope', '$http',
 
 myswasthControllers.controller('HistoryCtrl', ['$scope', '$http',
   function ($scope, $http) {
-    $http.get('data/homeicons.json').success(function(data) {
-      $scope.homeicons = data;
+    $http.get('data/history.json').success(function(data) {
+      $scope.historyData = data;
+    });
+
+    $http.get('data/history-case.json').success(function(data) {
+      $scope.historyCaseData = data;
     });
 }]);
 
